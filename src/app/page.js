@@ -35,11 +35,11 @@ export default function Home() {
       <div className="w-full h-14 bg-slate-100"></div>
 
       {/* process */}
-      <div className="w-full h-fit flex flex-col items-center gap-3">
-        <h3 className="text-2xl font-semibold text-center">Why you will love Global Dream Connect</h3>
-        <p className="max-w-md text-sm text-neutral-700 text-center">From dream to achievement in four simple steps. Join thousands of students who've transformed their aspirations into reality</p>
-        <div className="w-full h-fit grid grid-cols-1 auto-rows-auto place-items-center gap-2 md:grid-cols-2 md:grid-rows-2">
-            <Card className='p-4 gap-4 bg-sky-100 max-w-md'>
+      <div className="w-full h-fit flex flex-col items-center gap-3 py-8">
+        <h3 className="text-2xl font-semibold text-center sm:text-3xl md:text-4xl">Why you will love Global Dream Connect</h3>
+        <p className="max-w-md text-sm text-neutral-700 text-center sm:text-lg md:max-w-3xl mt-2">From dream to achievement in four simple steps. Join thousands of students who've transformed their aspirations into reality</p>
+        <div className="w-full max-w-6xl h-fit grid grid-cols-1 md:grid-cols-2 place-items-center gap-4 sm:gap-6 md:gap-8 mt-12">
+            <Card className='p-4 gap-4 bg-sky-100 max-w-md md:max-w-full'>
               <div className="w-fit aspect-square p-1.5 rounded-md bg-white">
                 <UserCheck2Icon fill="#00a6f4" stroke="#00a6f4" size={24}/>
               </div>
@@ -47,7 +47,7 @@ export default function Home() {
               <p className="text-neutral-700">Share your goals, interests, and areas where you need support so we can build your personalized profile.</p>
               <div className="px-3 py-1 w-fit h-fit rounded-full text-sm bg-sky-500 text-white">2 mins setup</div>
             </Card>
-            <Card className='p-4 gap-4 bg-green-100 max-w-md'>
+            <Card className='p-4 gap-4 bg-green-100 max-w-md md:max-w-full'>
               <div className="w-fit aspect-square p-1.5 rounded-md bg-white">
                 <Search stroke="#00c950" size={24}/>
               </div>
@@ -55,7 +55,7 @@ export default function Home() {
               <p className="text-neutral-700">Our AI matches you with mentors who have the right expertise and experience to guide your success.</p>
               <div className="px-3 py-1 w-fit h-fit rounded-full text-sm bg-green-500 text-white">smart matching</div>
             </Card>
-            <Card className='p-4 gap-4 bg-amber-100 max-w-md'>
+            <Card className='p-4 gap-4 bg-amber-100 max-w-md md:max-w-full'>
               <div className="w-fit aspect-square p-1.5 rounded-md bg-white">
                 <VideoIcon fill="#fe9a00" stroke="none" size={24}/>
               </div>
@@ -63,7 +63,7 @@ export default function Home() {
               <p className="text-neutral-700">Book sessions, receive personalized guidance, and access exclusive resources designed for your growth.</p>
               <div className="px-3 py-1 w-fit h-fit rounded-full text-sm bg-amber-500 text-white">flexible scheduling</div>
             </Card>
-            <Card className='p-4 gap-4 bg-rose-100 max-w-md'>
+            <Card className='p-4 gap-4 bg-rose-100 max-w-md md:max-w-full'>
               <div className="w-fit aspect-square p-1.5 rounded-md bg-white">
                 <FlagTriangleRight fill="#ff637e" stroke="#ff637e" size={24}/>
               </div>
