@@ -9,11 +9,11 @@ export default function Footer1(){
           <div className="text-center mb-8">
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-[#1a2b4a] text-2xl font-bold">G</span>
+                <span className="text-brand-blue text-3xl font-bold font-primary">G</span>
               </div>
               <div className="text-left">
-                <h3 className="text-xl font-bold">Global Dream</h3>
-                <h3 className="text-xl font-bold">Connect</h3>
+                <h3 className="text-xl font-bold font-primary">Global Dream</h3>
+                <h3 className="text-xl font-bold font-primary">Connect</h3>
               </div>
             </div>
             <p className="text-white/90 text-lg italic">

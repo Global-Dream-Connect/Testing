@@ -11,15 +11,15 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
         <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-[#e8dfd3] relative overflow-hidden">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 gap-0 items-center w-full mx-auto">
-            <div className="z-10">
-              <div className="flex items-center gap-2 mb-6">
+          <div className="flex flex-col gap-2 items-center w-full md:flex-row md:gap-10 ">
+            <div className="z-10 w-full md:w-1/3">
+              <div className="flex items-center justify-start gap-2 mb-6">
                 <div className="w-16 h-16 rounded-2xl flex items-center justify-center">
-                  <span className="text-brand-blue text-7xl font-medium font-primary">G</span>
+                  <span className="text-brand-blue text-7xl font-bold font-primary md:text-8xl">G</span>
                 </div>
                 <div>
-                  <h1 className="text-lg font-medium text-[#070750]">Global Dream</h1>
-                  <h1 className="text-lg font-medium text-[#070750]">Connect</h1>
+                  <h1 className="text-lg font-semibold t text-[#070750] md:text-xl md:font-bold">Global Dream</h1>
+                  <h1 className="text-lg font-semibold text-[#070750] md:text-xl md:font-bold">Connect</h1>
                 </div>
               </div>
               <h2 className="text-4xl sm:text-5xl font-semibold text-[#070750] mb-6 leading-tight">
@@ -33,8 +33,8 @@ export default function Home() {
                 <span className="w-3 aspect-square border-2 border-l-0 border-b-0 rotate-45 border-brand-blue"></span> Join Us
               </Button>
             </div>
-            <div className="relative w-full row-span-1 col-span-1 h-full">
-              <Image src={'/asset/image/heroimg.jpeg'} alt="hero-img" width={500} height={500} className=" w-full h-full object-fit"/>
+            <div className="relative w-full row-span-1 col-span-1 h-full md:w-2/3">
+              <Image src={'/asset/image/heroimg.jpeg'} alt="hero-img" width={700} height={700} className=" w-full h-full object-fill"/>
             </div>
           </div>
         </div>

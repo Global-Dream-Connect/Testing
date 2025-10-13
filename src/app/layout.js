@@ -27,7 +27,8 @@ const poppins = Poppins({
 
 const grotesque = Darker_Grotesque({
   variable : "--font-secondary",
-  subsets : ["latin"]
+  subsets : ["latin"],
+  weight:['300','400','500']
 })
 
 export const metadata = {
@@ -39,7 +40,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter} ${poppins} ${grotesque} antialiased relative w-full h-max scroll-smooth`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${poppins.variable} ${grotesque.variable} font-secondary antialiased relative w-full h-max scroll-smooth`}
       >
         <Header1/>
         {children}
