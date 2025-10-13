@@ -1,7 +1,9 @@
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Darker_Grotesque, Geist, Geist_Mono, Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
+import Footer1 from "@/components/footer1";
+import Header1 from "@/components/header1";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,6 +19,16 @@ const inter = Inter({
   variable : "--font-inter",
   subsets : ["latin"]
 })
+const poppins = Poppins({
+  variable : "--font-primary",
+  subsets : ["latin"],
+  weight : ['100','200','300','400','500','600','700']
+})
+
+const grotesque = Darker_Grotesque({
+  variable : "--font-secondary",
+  subsets : ["latin"]
+})
 
 export const metadata = {
   title: "Create Next App",
@@ -27,11 +39,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter} antialiased relative w-full h-max scroll-smooth`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter} ${poppins} ${grotesque} antialiased relative w-full h-max scroll-smooth`}
       >
-          <Navigation/>
+        <Header1/>
         {children}
-        <Footer/>
+        <Footer1/>
       </body>
     </html>
   );
