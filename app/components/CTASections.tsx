@@ -1,5 +1,3 @@
-import React from "react";
-
 const CTASections: React.FC = () => {
   return (
     <div className="flex flex-wrap w-full pb-5 bg-[#f0e7de]">

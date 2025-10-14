@@ -1,5 +1,3 @@
-import React from "react";
-
 const HowWeWork: React.FC = () => {
   return (
     <div style={{ backgroundColor: "#f0e7de" }}>

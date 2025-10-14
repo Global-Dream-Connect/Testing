@@ -1,5 +1,3 @@
-import React from "react";
-
 const Header: React.FC = () => {
   return (
     <header className="bg-[#070750] text-white py-4 px-6">
