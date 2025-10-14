@@ -1,11 +1,14 @@
 import { Reveal, SlideIn } from "@/components/motion/div-reveal";
+import RouteBtn from "@/components/routeBtn";
 import { Button } from "@/components/ui/button";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { ArrowLeftRight, ArrowRightIcon, ArrowUpRight, BookOpen, FlagTriangleRight, Search, Sprout, Star, UserCheck2Icon, VideoIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
+  
   return (
     <>
     <div className="min-h-screen flex flex-col">
@@ -15,23 +18,21 @@ export default function Home() {
             <div className="z-10 w-full md:w-1/3">
               <div className="flex items-center justify-start gap-2 mb-6">
                 <div className="w-16 h-16 rounded-2xl flex items-center justify-center">
-                  <span className="text-brand-blue text-7xl font-bold font-primary md:text-8xl">G</span>
+                  <span className="text-brand-blue text-7xl font-medium font-primary md:text-8xl">G</span>
                 </div>
                 <div>
-                  <h1 className="text-lg font-semibold t text-[#070750] md:text-xl md:font-bold">Global Dream</h1>
-                  <h1 className="text-lg font-semibold text-[#070750] md:text-xl md:font-bold">Connect</h1>
+                  <h1 className="text-lg text-[#070750] md:text-xl font-logo">Global Dream</h1>
+                  <h1 className="text-lg text-[#070750] md:text-xl font-logo">Connect</h1>
                 </div>
               </div>
               <h2 className="text-4xl sm:text-5xl font-semibold text-[#070750] mb-6 leading-tight">
                 Fresh Minds,<br />
                 Global Futures
               </h2>
-              <Button 
-                size="lg" 
-                className="bg-brand-yellow hover:bg-[#e0ab26] flex gap-3 items-center text-brand-blue text-lg px-8 rounded-full font-semibold"
-              >
-                <span className="w-3 aspect-square border-2 border-l-0 border-b-0 rotate-45 border-brand-blue"></span> Join Us
-              </Button>
+              <RouteBtn link={'/join'}className={"bg-brand-yellow hover:bg-[#e0ab26] flex gap-3 items-center text-brand-blue text-lg px-8 rounded-full font-semibold"}>
+                <div className="w-4 aspect-square border-2 border-l-0 border-b-0 rotate-45 gap-3 border-brand-blue"></div>
+                Join Us
+              </RouteBtn>
             </div>
             <div className="relative w-full row-span-1 col-span-1 h-full md:w-2/3">
               <Image src={'/asset/image/heroimg.jpeg'} alt="hero-img" width={700} height={700} className=" w-full h-full object-fill"/>
@@ -45,7 +46,7 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-brand-blue mb-6">Our Mission</h2>
           <div className="relative">
             <p className="text-lg text-gray-700 leading-relaxed mb-2">
-              Global Dream Connect empowers teenagers from underserved communities to dream and act bolder— through mentorship and guidance from top global universities. We think, prioritized by geography or background — only by opportunity. GDC gives that opportunity a voice, a mice, and plan.
+              Global Dream Connect empowers teenagers from underserved communities to dream bigger and act bolder by connecting them with mentors from top universities around the world. At GDC, we don’t prioritize by geography or background, only by opportunity. We give these opportunities a voice, a platform, and a clear path forward.
             </p>
             <div className="w-32 h-1 bg-red-500 mt-4"></div>
           </div>
@@ -104,27 +105,31 @@ export default function Home() {
             <div className="text-center p-8">
               <h2 className="text-3xl font-bold text-white mb-4">Become a Mentor</h2>
               <p className="text-white/90 mb-6 leading-relaxed">
-                Are you a college student passionate to guiding others? Join our mentorship network and help a teen unlock unread.
+                Are you a college student passionate about guiding others? Join our mentorship network and help a teen unlock their untapped potential.
               </p>
               <Button 
                 size="lg" 
                 className="bg-brand-yellow hover:bg-[#e0ab26] text-brand-blue font-semibold px-8 rounded-full"
               >
-                Apply to Mentor
+                <Link href={'/join'}>
+                  Apply to mentor
+                </Link>
               </Button>
             </div>
             
             <div className="text-center p-8 bg-white text-brand-blue">
               <h2 className="text-3xl font-bold mb-4">Join as Student</h2>
               <p className=" mb-6 leading-relaxed text-brand-blue">
-                If you're a student ages 13-23, big dreams. We'll connect with someone where three, we're want to go.
+                If you’re a student aged 13–23 with big dreams, we’ll connect you with someone who’s already been where you want to go.
               </p>
               <Button 
                 size="lg" 
                 variant="outline"
                 className="bg-[#070750] border-2 border-white text-white hover:bg-white hover:text-[#1a2b4a] hover:border hover:border-[#1a2b4a] font-semibold px-8 rounded-full"
-              >
+              ><Link href={'/join'}>
+                
                 Get Started
+                </Link>
               </Button>
             </div>
           </div>

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Logo from "./logo";
+import RouteBtn from "./routeBtn";
 
 export default function Header1() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,9 +34,9 @@ export default function Header1() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-brand-yellow hover:bg-brand-yellow/70 hover:cursor-pointer text-brand-blue font-semibold rounded-full">
+            <RouteBtn link={'/join'} className={'bg-brand-yellow hover:bg-brand-yellow/70 hover:cursor-pointer text-brand-blue font-semibold rounded-full'}>
               Join Us
-            </Button>
+            </RouteBtn>
           </div>
 
           {/* Mobile Menu Button */}

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Footer1(){
@@ -12,12 +13,12 @@ export default function Footer1(){
                 <span className="text-brand-blue text-3xl font-bold font-primary">G</span>
               </div>
               <div className="text-left">
-                <h3 className="text-xl font-bold font-primary">Global Dream</h3>
-                <h3 className="text-xl font-bold font-primary">Connect</h3>
+                <h3 className="text-xl font-logo">Global Dream</h3>
+                <h3 className="text-xl font-logo">Connect</h3>
               </div>
             </div>
             <p className="text-white/90 text-lg italic">
-              "Dreams are global. Opportunity should too."
+              Fresh Minds, Global Futures
             </p>
           </div>
 
@@ -27,9 +28,9 @@ export default function Footer1(){
               © Home
             </a>
             <span className="text-white/40">|</span>
-            <a href="#" className="hover:text-white transition-colors">
+            <Link href="/join" className="hover:text-white transition-colors">
               Join Us
-            </a>
+            </Link>
             <span className="text-white/40">|</span>
             <a href="#" className="hover:text-white transition-colors">
               Contact
@@ -40,7 +41,7 @@ export default function Footer1(){
             </a>
             <span className="text-white/40">|</span>
             <a href="#" className="hover:text-white transition-colors">
-              Inesgred
+              LinkedIn
             </a>
           </div>
         </div>
