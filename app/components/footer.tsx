@@ -15,22 +15,18 @@ const Footer: React.FC = () => {
 
         <div className="flex flex-wrap justify-center gap-8 mb-8">
           {[
-            "Home",
-            "|",
-            "Join Us",
-            "|",
-            "Contact",
-            "|",
-            "Instagram",
-            "|",
-            "LinkedIn",
+            { name: "Home", url: "#" },
+            { name: "Join Us", url: "#" },
+            { name: "Contact", url: "#" },
+            { name: "Instagram", url: "#" },
+            { name: "LinkedIn", url: "#" },
           ].map((item) => (
             <a
-              key={item}
-              href="#"
+              key={item.name}
+              href={item.url}
               className="text-[#f0e7de] hover:text-white transition-colors font-darker"
             >
-              {item}
+              {item.name}
             </a>
           ))}
         </div>
