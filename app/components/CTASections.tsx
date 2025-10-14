@@ -11,7 +11,7 @@ const CTASections: React.FC = () => {
           </h2>
           <p className="text-lg text-[#f0e7de] mb-8 max-w-2xl mx-auto font-darker">
             Are you a college student passionate about guiding others? Join our
-            mentorship network and help a teen unlock their potential!
+            mentorship network and help a teen unlock their untapped potential.
           </p>
           <button className="bg-[#ffe953] text-[#070750] px-8 py-3 rounded-full font-medium cursor-pointer transition-colors">
             Apply to Mentor
@@ -26,8 +26,8 @@ const CTASections: React.FC = () => {
             Join as Student
           </h2>
           <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto font-darker">
-            If you're a student aged 19-21 with big dreams, we'll connect you
-            with a mentor who knows where you want to go.
+            If you’re a student aged 13–23 with big dreams, we’ll connect you
+            with someone who’s already been where you want to go.
           </p>
           <button className="bg-[#070750] text-[#f0e7de] cursor-pointer px-8 py-3 rounded-full font-medium hover:bg-[#050540] transition-colors">
             Get Started

@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
             Global Dream Connect
           </h3>
           <blockquote className="text-lg italic text-[#ddceed] mb-6 font-glacial">
-            "Dreams are global. Opportunity should too."
+            "Fresh Minds, Global Futures"
           </blockquote>
         </div>
 

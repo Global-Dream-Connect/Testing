@@ -12,11 +12,11 @@ const MissionSection: React.FC = () => {
         {/* Mission Statement */}
         <div>
           <p className="text-xl md:text-2xl text-gray-600 leading-relaxed font-glacial">
-            Global Dream Connect empowers teens from underserved communities to
-            dream and act bolder—through mentorship at top global universities.
-            We believe potential isn't limited by geography or background—only
-            by opportunity. GDC gives that opportunity a voice, a mentor, and a
-            plan.
+            Global Dream Connect empowers teenagers from underserved communities
+            to dream bigger and act bolder by connecting them with mentors from
+            top universities around the world. At GDC, we don’t prioritize by
+            geography or background, only by opportunity. We give these
+            opportunities a voice, a platform, and a clear path forward.
           </p>
           <div className="w-[300] border-3 border-red-950 rounded-full"></div>
         </div>
