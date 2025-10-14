@@ -1,6 +1,6 @@
 import React from "react";
 
-const HowWeWork = () => {
+const HowWeWork: React.FC = () => {
   return (
     <div style={{ backgroundColor: "#f0e7de" }}>
       <h2 className="text-[#070750] text-4xl text-center font-bold pt-20 pb-10">
