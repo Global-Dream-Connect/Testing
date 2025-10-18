@@ -5,7 +5,6 @@ import HeroSection from "./components/HeroSection";
 import MissionSection from "./components/MissionSection";
 import HowWeWork from "./components/HowWeWork";
 import CTASections from "./components/CTASections";
-import Footer from "./components/Footer";
 
 const Home: React.FC = () => {
   return (
@@ -17,7 +16,6 @@ const Home: React.FC = () => {
         <HowWeWork />
         <CTASections />
       </main>
-      <Footer />
     </Layout>
   );
 };
