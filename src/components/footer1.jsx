@@ -10,7 +10,7 @@ export default function Footer1(){
           <div className="text-center mb-8">
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-brand-blue text-3xl font-bold font-primary">G</span>
+                <span className="text-brand-blue text-3xl font-medium font-primary">G</span>
               </div>
               <div className="text-left">
                 <h3 className="text-xl font-logo">Global Dream</h3>

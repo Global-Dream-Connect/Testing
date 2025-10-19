@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${poppins.variable} ${grotesque.variable} ${myFont.variable} font-secondary antialiased relative w-full h-max scroll-smooth`}
+        className={` ${inter.variable} ${poppins.variable} ${myFont.variable} font-primary antialiased relative w-full h-max scroll-smooth`}
       >
         <Header1/>
         {children}

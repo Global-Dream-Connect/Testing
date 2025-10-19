@@ -1,8 +1,6 @@
-import { Reveal, SlideIn } from "@/components/motion/div-reveal";
 import RouteBtn from "@/components/routeBtn";
 import { Button } from "@/components/ui/button";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
 import { ArrowLeftRight, ArrowRightIcon, ArrowUpRight, BookOpen, FlagTriangleRight, Search, Sprout, Star, UserCheck2Icon, VideoIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,11 +19,11 @@ export default function Home() {
                   <span className="text-brand-blue text-7xl font-medium font-primary md:text-8xl">G</span>
                 </div>
                 <div>
-                  <h1 className="text-lg text-[#070750] md:text-xl font-logo">Global Dream</h1>
-                  <h1 className="text-lg text-[#070750] md:text-xl font-logo">Connect</h1>
+                  <h1 className="text-lg text-brand-blue md:text-xl font-logo">Global Dream</h1>
+                  <h1 className="text-lg text-brand-blue md:text-xl font-logo">Connect</h1>
                 </div>
               </div>
-              <h2 className="text-4xl sm:text-5xl font-semibold text-[#070750] mb-6 leading-tight">
+              <h2 className="text-4xl sm:text-5xl font-semibold text-brand-blue mb-6 leading-tight">
                 Fresh Minds,<br />
                 Global Futures
               </h2>
@@ -74,9 +72,9 @@ export default function Home() {
             <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <ArrowLeftRight className="w-12 h-12 text-[#070750]" />
+                  <ArrowLeftRight className="w-12 h-12 text-brand-blue" />
                 </div>
-                <CardTitle className="text-2xl text-[#070750] mb-3">Connect</CardTitle>
+                <CardTitle className="text-2xl text-brand-blue mb-3">Connect</CardTitle>
                 <CardDescription className="text-base text-gray-700">
                   We match them with mentors from top universities around world.
                 </CardDescription>
@@ -86,9 +84,9 @@ export default function Home() {
             <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <Sprout className="w-12 h-12 text-[#070750]" />
+                  <Sprout className="w-12 h-12 text-brand-blue" />
                 </div>
-                <CardTitle className="text-2xl text-[#070750] mb-3">Grow</CardTitle>
+                <CardTitle className="text-2xl text-brand-blue mb-3">Grow</CardTitle>
                 <CardDescription className="text-base text-gray-700">
                   Together, they turn dreams into plans — plans into real progress.
                 </CardDescription>
@@ -125,7 +123,7 @@ export default function Home() {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="bg-[#070750] border-2 border-white text-white hover:bg-white hover:text-[#1a2b4a] hover:border hover:border-[#1a2b4a] font-semibold px-8 rounded-full"
+                className="bg-brand-blue border-2 border-white text-white hover:bg-white hover:text-[#1a2b4a] hover:border hover:border-[#1a2b4a] font-semibold px-8 rounded-full"
               ><Link href={'/join'}>
                 
                 Get Started

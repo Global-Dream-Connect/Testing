@@ -86,8 +86,8 @@
   --sidebar-ring: oklch(0.708 0 0);
   --brand-purple: oklch(96.568% 0.01743 289.503);
   --brand-green: oklch(98.727% 0.01754 170.466);
-  --brand-yellow: oklch(92.596% 0.16494 100.846);
-  --brand-blue : oklch(21.088% 0.12437 268.954);
+  --brand-yellow: #fdb71a;
+  --brand-blue : #1a2b4a;
 
 }
 
