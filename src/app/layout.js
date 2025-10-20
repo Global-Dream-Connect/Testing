@@ -26,6 +26,7 @@ const poppins = Poppins({
   weight : ['100','200','300','400','500','600','700']
 })
 
+
 const grotesque = Darker_Grotesque({
   variable : "--font-secondary",
   subsets : ["latin"],

@@ -10,32 +10,28 @@ export default function Home() {
   return (
     <>
     <div className="min-h-screen flex flex-col">
-        <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-[#e8dfd3] relative overflow-hidden">
-        <div className="container mx-auto">
-          <div className="flex flex-col gap-2 items-center w-full md:flex-row md:gap-10 ">
-            <div className="z-10 w-full md:w-1/3">
-              <div className="flex items-center justify-start gap-2 mb-6">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center">
-                  <span className="text-brand-blue text-7xl font-medium font-primary md:text-8xl">G</span>
-                </div>
-                <div>
-                  <h1 className="text-lg text-brand-blue md:text-xl font-logo">Global Dream</h1>
-                  <h1 className="text-lg text-brand-blue md:text-xl font-logo">Connect</h1>
-                </div>
+        <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-[#e8dfd3] h-[90vh] relative overflow-hidden">
+        <div className="flex flex-col gap-2 items-center w-full md:flex-row md:gap-10 ">
+          <div className="z-10 w-full max-w-5xl m-auto">
+            <div className="flex items-center justify-start gap-2 mb-6">
+              <div className="w-16 h-16 rounded-2xl flex items-center justify-center">
+                <span className="text-brand-blue text-7xl font-medium font-primary md:text-8xl">G</span>
               </div>
-              <h2 className="text-4xl sm:text-5xl font-semibold text-brand-blue mb-6 leading-tight">
-                Fresh Minds,<br />
-                Global Futures
-              </h2>
-              <RouteBtn link={'/join'}className={"bg-brand-yellow hover:bg-[#e0ab26] flex gap-3 items-center text-brand-blue text-lg px-8 rounded-full font-semibold"}>
-                <div className="w-4 aspect-square border-2 border-l-0 border-b-0 rotate-45 gap-3 border-brand-blue"></div>
-                Join Us
-              </RouteBtn>
+              <div>
+                <h1 className="text-lg text-brand-blue md:text-xl font-logo">Global Dream</h1>
+                <h1 className="text-lg text-brand-blue md:text-xl font-logo">Connect</h1>
+              </div>
             </div>
-            <div className="relative w-full row-span-1 col-span-1 h-full md:w-2/3">
-              <Image src={'/asset/image/heroimg.jpeg'} alt="hero-img" width={700} height={700} className=" w-full h-full object-fill"/>
-            </div>
+            <h2 className="text-4xl sm:text-5xl font-semibold text-brand-blue mb-6 leading-tight">
+              Fresh Minds,<br />
+              Global Futures
+            </h2>
+            <RouteBtn link={'/join'}className={"bg-brand-yellow hover:bg-[#e0ab26] flex gap-3 items-center text-brand-blue text-lg px-8 rounded-full font-semibold"}>
+              <div className="w-4 aspect-square border-2 border-l-0 border-b-0 rotate-45 gap-3 border-brand-blue"></div>
+              Join Us
+            </RouteBtn>
           </div>
+          
         </div>
       </section>
 
