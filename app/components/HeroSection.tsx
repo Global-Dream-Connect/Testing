@@ -35,21 +35,6 @@ const HeroSection: React.FC = () => {
         {/* Visual Element - Seamlessly embedded into background */}
         <div className="lg:w-3/5 w-full flex items-center justify-center p-8 lg:p-12">
           <div className="relative w-full h-[500] max-h-[70vh] aspect-[5/3]">
-            <Image
-              src="/images/hero_section_image.jpeg"
-              alt="Global Dream Connect - Empowering Students"
-              fill
-              className="object-cover"
-              priority
-              sizes="(max-width: 1024px) 100vw, 60vw"
-              style={{
-                maskImage:
-                  "linear-gradient(to right, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%)",
-                WebkitMaskImage:
-                  "linear-gradient(to right, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%)",
-              }}
-            />
-            {/* Gradient overlay to blend edges */}
             <div
               className="absolute inset-0 pointer-events-none"
               style={{
