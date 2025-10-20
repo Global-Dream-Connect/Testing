@@ -1,21 +1,23 @@
-import Navbar from "./components/navbar";
-import Hero from "./components/hero";
-import Section1 from "./components/section1";
-import Section2 from "./components/section2";
-import Section3 from "./components/section3";
-import Section4 from "./components/section4";
-import Footer from "./components/footer";
+import React from "react";
+import Layout from "./components/Layout";
+import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
+import MissionSection from "./components/MissionSection";
+import HowWeWork from "./components/HowWeWork";
+import CTASections from "./components/CTASections";
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Footer />
-    </>
+    <Layout>
+      <Header />
+      <main>
+        <HeroSection />
+        <MissionSection />
+        <HowWeWork />
+        <CTASections />
+      </main>
+    </Layout>
   );
-}
+};
+
+export default Home;
