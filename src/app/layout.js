@@ -21,9 +21,9 @@ const inter = Inter({
   subsets : ["latin"]
 })
 const poppins = Poppins({
-  variable : "--font-primary",
+  variable : "--font-poppins",
   subsets : ["latin"],
-  weight : ['100','200','300','400','500','600','700']
+  weight : ['100','200','300','400','500']
 })
 
 
@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${inter.variable} ${poppins.variable} ${myFont.variable} font-primary antialiased relative w-full h-max scroll-smooth`}
+        className={` ${inter.variable} ${poppins.variable} ${myFont.variable} antialiased relative w-full h-max scroll-smooth`}
       >
         <Header1/>
         {children}
