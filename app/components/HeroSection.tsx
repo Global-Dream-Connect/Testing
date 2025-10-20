@@ -1,9 +1,20 @@
 import Image from "next/image";
+// Import Poppins font from Google Fonts (if not already included globally)
+import Head from "next/head";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="text-[#070750]" style={{ backgroundColor: "#f0e7de" }}>
-      <div className="flex flex-col lg:flex-row items-stretch w-full min-h-screen">
+    <div>
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
+      <section
+        className="text-[#070750]"
+        style={{ backgroundColor: "#f0e7de" }}
+      >
         {/* Text Content - 2/5 width */}
         <div className="lg:w-2/5 w-full py-20 px-4 lg:px-12 xl:px-20 flex flex-col justify-center">
           {/* Logo/Brand */}
@@ -19,7 +30,7 @@ const HeroSection: React.FC = () => {
           </div>
 
           {/* Main Content */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-poppins text-center lg:text-left leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-glacial text-center lg:text-left leading-tight">
             Fresh Minds,
             <br />
             <span className="text-[#070750]">Global Futures</span>
@@ -34,7 +45,7 @@ const HeroSection: React.FC = () => {
 
         {/* Visual Element - Seamlessly embedded into background */}
         <div className="lg:w-3/5 w-full flex items-center justify-center p-8 lg:p-12">
-          <div className="relative w-full h-[500] max-h-[70vh] aspect-[5/3]">
+          <div className="relative w-full h-auto max-h-[70vh] aspect-[5/3]">
             <div
               className="absolute inset-0 pointer-events-none"
               style={{
@@ -44,8 +55,8 @@ const HeroSection: React.FC = () => {
             />
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
