@@ -28,9 +28,17 @@ export default function Footer1(){
               © Home
             </a>
             <span className="text-white/40">|</span>
-            <Link href="/join" className="hover:text-white transition-colors">
+            {/* <Link href="/join" className="hover:text-white transition-colors">
               Join Us
-            </Link>
+            </Link> */}
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSf3Ww0n5V7VMLoO8Ty3X5w8g5r8oh_FDHyBklk54mWaPzvQDQ/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+            >
+              Join Now
+            </a>
             <span className="text-white/40">|</span>
             <a href="#" className="hover:text-white transition-colors">
               Contact

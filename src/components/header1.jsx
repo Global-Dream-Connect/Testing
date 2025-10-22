@@ -27,9 +27,14 @@ export default function Header1() {
 
           {/* CTA Button */}
           <div className="hidden md:block ml-auto">
-            <RouteBtn link={'/join'} className={'bg-brand-yellow hover:bg-brand-yellow/70 hover:cursor-pointer text-brand-blue font-semibold rounded-full'}>
-              Join Us
-            </RouteBtn>
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf3Ww0n5V7VMLoO8Ty3X5w8g5r8oh_FDHyBklk54mWaPzvQDQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-fit h-fit px-4 py-2 bg-brand-yellow hover:bg-brand-yellow/70 hover:cursor-pointer text-brand-blue font-semibold rounded-full"
+              >
+                Join Now
+              </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -49,9 +54,17 @@ export default function Header1() {
                 Home
               </Link>
               
-              <RouteBtn link={'/join'} className={'w-fit bg-brand-yellow hover:bg-brand-yellow/70 hover:cursor-pointer text-brand-blue font-semibold rounded-full'}>
+              {/* <RouteBtn link={'/join'} className={'w-fit bg-brand-yellow hover:bg-brand-yellow/70 hover:cursor-pointer text-brand-blue font-semibold rounded-full'}>
                 Join Us
-              </RouteBtn>
+              </RouteBtn> */}
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf3Ww0n5V7VMLoO8Ty3X5w8g5r8oh_FDHyBklk54mWaPzvQDQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-fit px-2 bg-brand-yellow hover:bg-brand-yellow/70 hover:cursor-pointer text-brand-blue font-semibold rounded-full"
+              >
+                Join Now
+              </a>
             </div>
           </div>
         )}

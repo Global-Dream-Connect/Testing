@@ -101,14 +101,17 @@ export default function Home() {
               <p className="text-white/90 mb-6 leading-relaxed">
                 Are you a college student passionate about guiding others? Join our mentorship network and help a teen unlock their untapped potential.
               </p>
-              <Button 
+              {/* <Button 
                 size="lg" 
                 className="bg-brand-yellow hover:bg-[#e0ab26] text-brand-blue font-semibold px-8 rounded-full"
               >
                 <Link href={'/join'}>
                   Apply to mentor
                 </Link>
-              </Button>
+              </Button> */}
+              <RouteBtn className={'bg-brand-yellow hover:bg-[#e0ab26] text-brand-blue font-semibold px-8 rounded-full'}>
+                Apply to mentor
+              </RouteBtn>
             </div>
             
             <div className="text-center p-8 bg-white text-brand-blue">
@@ -116,7 +119,7 @@ export default function Home() {
               <p className=" mb-6 leading-relaxed text-brand-blue">
                 If you’re a student aged 13–23 with big dreams, we’ll connect you with someone who’s already been where you want to go.
               </p>
-              <Button 
+              {/* <Button 
                 size="lg" 
                 variant="outline"
                 className="bg-brand-blue border-2 border-white text-white hover:bg-white hover:text-[#1a2b4a] hover:border hover:border-[#1a2b4a] font-semibold px-8 rounded-full"
@@ -124,7 +127,10 @@ export default function Home() {
                 
                 Get Started
                 </Link>
-              </Button>
+              </Button> */}
+              <RouteBtn className={'bg-brand-blue border-2 border-white text-white hover:bg-white hover:text-brand-blue hover:border hover:border-brand-blue font-semibold px-8 rounded-full'}>
+                Get Started
+              </RouteBtn>
             </div>
           </div>
         </div>
