@@ -1,5 +1,6 @@
-import Link from "next/link";
+'use client'
 import React from "react";
+import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog";
 
 export default function Footer1(){
     return(
@@ -25,12 +26,10 @@ export default function Footer1(){
           {/* Footer Links */}
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-white/80">
             <a href="#" className="hover:text-white transition-colors">
-              © Home
+              © Global Dream Connect
             </a>
             <span className="text-white/40">|</span>
-            {/* <Link href="/join" className="hover:text-white transition-colors">
-              Join Us
-            </Link> */}
+  
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSf3Ww0n5V7VMLoO8Ty3X5w8g5r8oh_FDHyBklk54mWaPzvQDQ/viewform"
               target="_blank"
@@ -40,15 +39,33 @@ export default function Footer1(){
               Join Now
             </a>
             <span className="text-white/40">|</span>
-            <a href="#" className="hover:text-white transition-colors">
-              Contact
-            </a>
+
+            {/* <a href="mailto:hr@globaldreamconnect.org">Contact Us</a> */}
+            <Dialog>
+              <DialogTrigger className="hover:text-white transition-colors">Contact Us</DialogTrigger>
+              <DialogContent>
+                Send us an email at :
+                <p className="p-2 rounded-sm outline border  w-full text-neutral-950">hr@globaldreamconnect.org </p>
+              </DialogContent>
+            </Dialog>
             <span className="text-white/40">|</span>
-            <a href="#" className="hover:text-white transition-colors">
+
+            <a
+              href="https://www.instagram.com/global_dream_connect"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+            >
               Instagram
             </a>
             <span className="text-white/40">|</span>
-            <a href="#" className="hover:text-white transition-colors">
+
+            <a
+              href="https://www.linkedin.com/company/global-dream-connect-gdc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+            >
               LinkedIn
             </a>
           </div>
