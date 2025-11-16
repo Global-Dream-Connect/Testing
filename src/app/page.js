@@ -1,145 +1,52 @@
-import RouteBtn from "@/components/routeBtn";
-import { Button } from "@/components/ui/button";
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeftRight, ArrowRightIcon, ArrowUpRight, BookOpen, FlagTriangleRight, Search, Sprout, Star, UserCheck2Icon, VideoIcon } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
+import BrandGuideline from "@/components/brand-guideline"
+import FQI from "@/components/fqi"
+import Hero from "@/components/hero"
+import TestimonialCard from "@/components/testimonial-card"
+import React from "react"
 
-export default function Home() {
-  
-  return (
+export default function Page(){
+  return(
     <>
-    <div className="min-h-screen flex flex-col">
-        <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-[#e8dfd3] h-[90vh] relative overflow-hidden">
-        <div className="flex flex-col gap-2 items-center w-full md:flex-row md:gap-10 ">
-          <div className="z-10 w-full max-w-5xl m-auto">
-            <div className="flex items-center justify-start gap-2 mb-6">
-              <div className="w-16 h-16 rounded-2xl flex items-center justify-center">
-                <span className="text-brand-blue text-7xl font-medium font-primary md:text-8xl">G</span>
+    {/* <div className="w-full h-20 bg-red-200">
+
+    </div> */}
+      <Hero/>
+      <BrandGuideline/>
+      <FQI/>
+      <div className="w-full h-max p-20 bg-white inline-flex flex-col justify-start items-start gap-2.5">
+        <div className="self-stretch p-20 bg-violet-200/30 rounded-[32px] inline-flex justify-center items-start gap-12 overflow-hidden">
+          <div className="flex-1 flex justify-start items-start gap-12">
+            <div className="flex-1 flex justify-between items-center">
+              <div className="w-[787px] inline-flex flex-col justify-start items-start gap-8">
+                <div className="self-stretch inline-flex justify-center items-center gap-2.5">
+                  <div className="flex-1 justify-start text-zinc-800 text-5xl font-bold font-['Plus_Jakarta_Sans'] leading-[57.60px]">Explore our free resources</div>
+                </div>
+                <div className="self-stretch inline-flex justify-start items-start gap-2.5">
+                  <div className="flex-1 justify-start text-zinc-800 text-2xl font-normal font-['Poppins'] leading-8">Get a taste of what GDC has to offer with our free resources, designed to help you on your college application journey.</div>
+                </div>
               </div>
-              <div>
-                <h1 className="text-lg text-brand-blue md:text-xl font-logo">Global Dream</h1>
-                <h1 className="text-lg text-brand-blue md:text-xl font-logo">Connect</h1>
+              <div data-state="primary button with icon" className="size- px-7 py-5 bg-indigo-950 rounded-[9.93px] flex justify-center items-center gap-3 overflow-hidden">
+                <div data-state="active" className="size- inline-flex flex-col justify-start items-start">
+                  <div className="size- rounded-[84.41px] flex flex-col justify-center items-start gap-3">
+                    <div className="justify-start text-white text-xl font-medium font-['Poppins'] leading-6">View Resources</div>
+                  </div>
+                  <div className="w-3.5 h-0 opacity-0 outline outline-[1.24px] outline-offset-[-0.62px] outline-white" />
+                </div>
+                <div data-svg-wrapper className="relative">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.3793 19.8622L22.3448 14.8967M22.3448 14.8967L17.3793 9.93115M22.3448 14.8967H7.44824" stroke="white" stroke-width="1.86207" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
               </div>
             </div>
-            <h2 className="text-4xl sm:text-5xl font-semibold text-brand-blue mb-6 leading-tight">
-              Fresh Minds,<br />
-              Global Futures
-            </h2>
-            <RouteBtn link={'/join'}className={"bg-brand-yellow hover:bg-[#e0ab26] flex gap-3 items-center text-brand-blue text-lg px-8 rounded-full font-semibold"}>
-              <div className="w-4 aspect-square border-2 border-l-0 border-b-0 rotate-45 gap-3 border-brand-blue"></div>
-              Join Us
-            </RouteBtn>
-          </div>
-          
-        </div>
-      </section>
-
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-4xl font-bold text-brand-blue mb-6">Our Mission</h2>
-          <div className="relative">
-            <p className="text-lg text-gray-700 leading-relaxed mb-2">
-              Global Dream Connect empowers teenagers from underserved communities to dream bigger and act bolder by connecting them with mentors from top universities around the world. At GDC, we don’t prioritize by geography or background, only by opportunity. We give these opportunities a voice, a platform, and a clear path forward.
-            </p>
-            <div className="w-32 h-1 bg-red-500 mt-4"></div>
           </div>
         </div>
-      </section>
+      </div>
+    {/* testimonial */}
+      <div className="w-full h-fit p-10">
+        <TestimonialCard/>
 
-      {/* How We Work Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#e8dfd3]">
-        <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center text-brand-blue mb-16">How We Work</h2>
-          
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <BookOpen className="w-12 h-12 text-brand-blue" />
-                </div>
-                <CardTitle className="text-2xl text-brand-blue mb-3">Discover</CardTitle>
-                <CardDescription className="text-base text-gray-700">
-                  Students sign up to explore mentorship opportunities, reflect projects, and development.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-
-            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <ArrowLeftRight className="w-12 h-12 text-brand-blue" />
-                </div>
-                <CardTitle className="text-2xl text-brand-blue mb-3">Connect</CardTitle>
-                <CardDescription className="text-base text-gray-700">
-                  We match them with mentors from top universities around world.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-
-            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <Sprout className="w-12 h-12 text-brand-blue" />
-                </div>
-                <CardTitle className="text-2xl text-brand-blue mb-3">Grow</CardTitle>
-                <CardDescription className="text-base text-gray-700">
-                  Together, they turn dreams into plans — plans into real progress.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-            {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#e8dfd3] ">
-        <div className="container mx-auto bg-brand-blue">
-          <div className="grid md:grid-cols-2 gap-8 mx-auto">
-            <div className="text-center p-8">
-              <h2 className="text-3xl font-bold text-white mb-4">Become a Mentor</h2>
-              <p className="text-white/90 mb-6 leading-relaxed">
-                Are you a college student passionate about guiding others? Join our mentorship network and help a teen unlock their untapped potential.
-              </p>
-              {/* <Button 
-                size="lg" 
-                className="bg-brand-yellow hover:bg-[#e0ab26] text-brand-blue font-semibold px-8 rounded-full"
-              >
-                <Link href={'/join'}>
-                  Apply to mentor
-                </Link>
-              </Button> */}
-              <RouteBtn className={'bg-brand-yellow hover:bg-[#e0ab26] text-brand-blue font-semibold px-8 rounded-full'}>
-                Apply to mentor
-              </RouteBtn>
-            </div>
-            
-            <div className="text-center p-8 bg-white text-brand-blue">
-              <h2 className="text-3xl font-bold mb-4">Join as Student</h2>
-              <p className=" mb-6 leading-relaxed text-brand-blue">
-                If you’re a student aged 13–23 with big dreams, we’ll connect you with someone who’s already been where you want to go.
-              </p>
-              {/* <Button 
-                size="lg" 
-                variant="outline"
-                className="bg-brand-blue border-2 border-white text-white hover:bg-white hover:text-[#1a2b4a] hover:border hover:border-[#1a2b4a] font-semibold px-8 rounded-full"
-              ><Link href={'/join'}>
-                
-                Get Started
-                </Link>
-              </Button> */}
-              <RouteBtn className={'bg-brand-blue border-2 border-white text-white hover:bg-white hover:text-brand-blue hover:border hover:border-brand-blue font-semibold px-8 rounded-full'}>
-                Get Started
-              </RouteBtn>
-            </div>
-          </div>
-        </div>
-      </section>
-    
-    </div>  
-    
-
+      </div>
     </>
-  );
+  )
 }
-

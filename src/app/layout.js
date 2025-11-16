@@ -1,9 +1,6 @@
 import { Darker_Grotesque, Geist, Geist_Mono, Inter, Poppins } from "next/font/google";
 import "./globals.css";
-import Navigation from "@/components/navigation";
-import Footer from "@/components/footer";
-import Footer1 from "@/components/footer1";
-import Header1 from "@/components/header1";
+
 import localFont from 'next/font/local'
 
 const geistSans = Geist({
@@ -50,11 +47,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${inter.variable} ${poppins.variable} ${myFont.variable} antialiased relative w-full h-max scroll-smooth`}
+        className={` ${inter.variable} ${poppins.variable} ${myFont.variable} antialiased relative bg-white w-full h-max scroll-smooth`}
       >
-        <Header1/>
         {children}
-        <Footer1/>
+
       </body>
     </html>
   );
